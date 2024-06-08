@@ -76,7 +76,7 @@
              &kp F1     &kp F2     &kp F3     &kp F4   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  '"      │    [     │    {     │    (     │   +=     │   │          │          │          │          │   F11    │
-        //    &kp SQT     &kp LBKT    &kp LBPC    &kp LPAR  &kp EQUAL     &trans      &trans     &trans     &trans     &kp F11
+             &kp SQT     &kp LBKT    &kp LBRC    &kp LPAR  &kp EQUAL     &trans      &trans     &trans     &trans     &kp F11
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│    \|    │    ]     │    }     │    )     │   -_     │   │          │          │          │          │   F12    │
             &kp BSLH   &kp RBKT    &kp RBRC    &kp RPAR &kp MINUS      &trans      &trans     &trans     &trans     &kp F12
