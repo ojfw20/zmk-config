@@ -61,8 +61,8 @@
         //│ TAB      │  `~      │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │         │
             &kp TAB    &kp GRAVE   &trans     &trans     &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │          │          │          │          │   │ HOME     │  PG DN   │  PG UP   │ END      │          │
-           &caps_word  &trans     &trans     &trans     &trans         &kp HOME    &kp PG_DN  &kp PG_UP &kp END     &trans
+        //│ |        │          │          │          │          │   │ HOME     │  PG DN   │  PG UP   │ END      │          │
+            &kp BSLH   &trans     &caps_word  &trans     &trans        &kp HOME    &kp PG_DN  &kp PG_UP &kp END     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
