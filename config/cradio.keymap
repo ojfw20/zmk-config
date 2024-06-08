@@ -106,16 +106,16 @@
         game_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │          │
-           &sys_reset  &trans     &trans     &trans    &trans           &trans     &trans     &tog 0    &trans    &trans 
+        //│  1       │  2       │  3       │  4       │  5       │   │          │          │          │          │          │
+           &kp N1      &kp N2     &kp N3     &kp N4    &kp N5          &trans     &trans     &tog 0    &trans    &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │          │   │          │          │          │          │          |
+        //│  Q       │  W       │  F       │  P       │  B       │   │          │          │          │          │          |
           &bootloader  &trans     &trans     &trans    &trans          &trans     &trans     &trans     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans    &trans     &trans     &trans     &trans     &trans
+        //│  Z       │  X       │  C       │  D       │  LALT    │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &kp LALT    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp SHFT         &trans     &trans
+                                             &kp LCTRL  &kp SHFT         &trans     &trans
         //                                ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
