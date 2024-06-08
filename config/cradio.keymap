@@ -126,7 +126,7 @@
          HRML(A,        R,         S,         T)     &kp G             &kp K      HRMR(N,        E,         I,         O)
          &kp Z      &kp X      &kp C      &kp D      &kp V             &kp M      &kp H      &kp COMMA  &kp DOT    &kp FSLH
                                      &lt RIG TAB     &kp SPACE         &lt LFT BSPC &kp LSHFT
-            >;
+									 >;
         };
 
 
