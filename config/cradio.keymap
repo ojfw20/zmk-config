@@ -89,7 +89,7 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
+        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │  game    │          │  RESET   │
            &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &tog 4    &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
@@ -106,16 +106,16 @@
         game_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  1       │  2       │  3       │  4       │  5       │   │          │          │          │          │          │
+        //│  1       │  2       │  3       │  4       │  5       │   │          │          │    base  │          │          │
            &kp N1      &kp N2     &kp N3     &kp N4    &kp N5          &trans     &trans     &tog 0    &trans    &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Q       │  W       │  F       │  P       │  B       │   │          │          │          │          │          |
-          &bootloader  &trans     &trans     &trans    &trans          &trans     &trans     &trans     &trans    &trans
+            &kp Q      &kp W      &kp F      &kp P      &kp B          &trans     &trans     &trans     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  LALT    │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &kp LALT    &trans     &trans     &trans     &trans     &trans
+            &kp Z     &kp X      &kp C      &kp D     &kp LALT         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp LCTRL  &kp SHFT         &trans     &trans
+                                             &kp LCTRL  &kp LSHFT         &trans     &trans
         //                                ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
