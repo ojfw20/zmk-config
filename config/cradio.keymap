@@ -42,7 +42,7 @@
             &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  K       │  N       │  E       │  I       │  O       │
-            HRML(A,        R,         S,         T)     &kp G          &kp K      HRMR(N,        E,         I,        O)
+            HRML(A,        R,         S,         T)     &ht TAB G          &kp K      HRMR(N,        E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │  M       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp M      &kp H      &kp COMMA  &kp DOT    &kp FSLH
@@ -110,10 +110,10 @@
            &kp Q      &kp W       &kp F       &kp P     &kp B          &trans     &trans      &to 0      &trans    &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │          │          │          │          │          |
-            &kp A      &kp R      &kp S      &kp T      &kp  G          &trans    &trans     &trans     &trans    &trans
+            &kp A      &kp R      &kp S      &kp T      &kp  G          &trans    &trans     &kp UARW     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  TAB     │  ESC     │   │          │          │          │          │          │
-            &kp Z     &kp X      &kp C      &kp TAB      &kp ESC        &trans     &trans      &trans     &trans   &trans
+            &kp Z     &kp X      &kp C      &kp TAB      &kp ESC        &trans     &kp LARW  &kp DARW    &kp RARW   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp LCTRL  &ht LALT SPACE   &trans     &trans
         //                                ╰──────────┴──────────╯   ╰──────────┴──────────╯
