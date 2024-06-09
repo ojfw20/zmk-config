@@ -62,7 +62,7 @@
             &kp TAB    &kp GRAVE   &trans     &trans     &trans         &kp DEL  &kp LARW   &kp DARW   &kp UARW    &kp RARW
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │          │          │          │          │   │          │  HOME    │  PG DN   │ PG UP    │  END     │
-           &caps_word   &trans     &trans     &trans    &kp ALT		   &trans      &kp HOME    &kp PG_DN  &kp PG_UP &kp END      
+           &caps_word   &trans     &trans     &trans    &kp LALT		   &trans      &kp HOME    &kp PG_DN  &kp PG_UP &kp END      
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴────── ───╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
