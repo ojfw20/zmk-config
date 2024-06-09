@@ -106,16 +106,16 @@
         game_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  1       │  2       │  3       │  4       │  5       │   │          │          │   base  │          │          │
-           &kp N1      &kp N2     &kp N3     &kp N4    &kp N5          &trans     &trans      &to 0      &trans    &trans 
+        //│  Q		 │  W       │  F       │  P       │  B       │   │          │          │   base  │          │          │
+           &kp Q      &kp N2     &kp N3     &kp N4    &kp N5          &trans     &trans      &to 0      &trans    &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Q       │  W       │  F       │  P       │  B       │   │   TAP    │          │          │          │          |
-            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp TAB    &trans     &trans     &trans    &trans
+        //│  A       │  R       │  S       │  T       │  G       │   │          │          │          │          │          |
+            &kp A      &kp R      &kp S      &kp T      &kp  G          &trans    &trans     &trans     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  LALT    │   │   CTRL   │  LALT    │   LGUI   │  LSHFT   │          │
-            &kp Z     &kp X      &kp C      &kp D     &kp LALT         &kp LCTRL   &kp LALT   &kp LGUI  &kp SHFT   &trans
+        //│  Z       │  X       │  C       │  TAB     │  LALT    │   │          │          │          │          │          │
+            &kp Z     &kp X      &kp C      &kp TAB      &kp LALT        &trans     &trans      &trans     &trans   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp LCTRL  &kp LSHFT         &trans     &trans
+                                             &kp LCTRL  &ht LALT SPACE   &trans     &trans
         //                                ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
