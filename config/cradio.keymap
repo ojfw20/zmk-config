@@ -47,7 +47,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  M       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp M      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp SPACE      &kp LSHFT  &lt 1 BSPC 
+                                            &lt 1 TAB   &kp SPACE      &kp LSHFT  &lt 2 BSPC 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -62,7 +62,7 @@
             &kp TAB    &kp GRAVE   &trans     &trans     &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │          │          │          │          │   │ HOME     │  PG DN   │  PG UP   │ END      │          │
-           &caps_word   &trans     &trans     &trans     &trans        &kp HOME    &kp PG_DN  &kp PG_UP &kp END     &trans
+           &caps_word   &trans     &trans     &trans   &bt BT_CLR       &kp HOME    &kp PG_DN  &kp PG_UP &kp END     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -79,7 +79,7 @@
              &kp SQT     &kp LBKT    &kp LBRC    &kp LPAR  &kp EQUAL     &trans      &trans     &trans     &trans     &kp F11
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│    \|    │    ]     │    }     │    )     │   -_     │   │          │          │          │          │   F12    │
-            &kp BSLH   &kp RBKT    &kp RBRC    &kp RPAR &kp MINUS      &trans      &trans     &trans     &trans     &kp F12
+            &kp BSLH   &kp RBKT    &kp RBRC    &kp RPAR &kp MINUS      &bt BT_CLR   &trans     &trans     &trans     &kp F12
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
