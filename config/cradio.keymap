@@ -113,7 +113,7 @@
             &kp A      &kp R      &kp S      &kp T      &kp  G          &trans    &trans     &kp UARW     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  TAB     │  ESC     │   │          │          │          │          │          │
-            &kp Z     &kp X      &kp C      &kp TAB      &kp ESC        &trans     &kp LARW  &kp DARW    &kp RARW   &trans
+            &kp Z     &kp X      &kp C      &kp TAB      &ht LSHFT ESC        &trans     &kp LARW  &kp DARW    &kp RARW   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp LCTRL  &ht LALT SPACE   &trans     &trans
         //                                ╰──────────┴──────────╯   ╰──────────┴──────────╯
