@@ -62,7 +62,7 @@
             &kp TAB    &kp GRAVE   &trans     &trans     &trans         &kp DEL  &kp LARW   &kp DARW   &kp UARW    &kp RARW
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │          │          │          │          │   │          │  HOME    │  PG DN   │ PG UP    │  END     │
-           &caps_word   &trans     &trans     &trans     &trans        &trans      &kp HOME    &kp PG_DN  &kp PG_UP &kp END      
+           &caps_word   &trans     &trans     &trans    &kp ALT		   &trans      &kp HOME    &kp PG_DN  &kp PG_UP &kp END      
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴────── ───╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -109,11 +109,11 @@
         //│  1       │  2       │  3       │  4       │  5       │   │          │          │   base  │          │          │
            &kp N1      &kp N2     &kp N3     &kp N4    &kp N5          &trans     &trans      &to 0      &trans    &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Q       │  W       │  F       │  P       │  B       │   │          │          │          │          │          |
-            &kp Q      &kp W      &kp F      &kp P      &kp B          &trans     &trans     &trans     &trans    &trans
+        //│  Q       │  W       │  F       │  P       │  B       │   │   TAP    │          │          │          │          |
+            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp TAB    &trans     &trans     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  LALT    │   │          │          │          │          │          │
-            &kp Z     &kp X      &kp C      &kp D     &kp LALT         &trans     &trans     &trans     &trans     &trans
+        //│  Z       │  X       │  C       │  D       │  LALT    │   │   CTRL   │  LALT    │   LGUI   │  LSHFT   │          │
+            &kp Z     &kp X      &kp C      &kp D     &kp LALT         &kp LCTRL   &kp LALT   &kp LGUI  &kp SHFT   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp LCTRL  &kp LSHFT         &trans     &trans
         //                                ╰──────────┴──────────╯   ╰──────────┴──────────╯
