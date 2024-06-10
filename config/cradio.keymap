@@ -42,7 +42,7 @@
             &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  K       │  N       │  E       │  I       │  O       │
-            HRML(A,        R,         S,         T)     &ht TAB G          &kp K      HRMR(N,        E,         I,        O)
+            HRML(A,        R,         S,         T)     &ht TAB G      &ht LALT K      HRMR(N,        E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │  M       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp M      &kp H      &kp COMMA  &kp DOT    &kp FSLH
