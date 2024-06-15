@@ -90,7 +90,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │  game    │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &tog 4     &trans      &trans    &sys_reset
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &tog 4     &trans      &trans    &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
           &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
@@ -115,7 +115,7 @@
         //│  Z       │  X       │  C       │  D       │  SHIFT   │   │          │          │          │          │          │
             &kp Z     &kp X      &kp C      &kp TAB      &kp V          &trans     &kp LARW  &kp DARW    &kp RARW   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp LCTRL &lt 6 SPACE     &trans     &trans
+                                            &kp LCTRL &lt 5 SPACE     &trans     &trans
         //                                ╰──────────┴──────────╯    ╰──────────┴──────────╯
             >;
 			
