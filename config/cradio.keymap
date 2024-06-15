@@ -123,7 +123,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ 1        │  2       │  3       │  4       │  ESC     │   │          │          │          │          │          │
-            &kp N1      &kp N2     &kp N3     &kp N4     &kp ESC         &trans     &trans      &trans    &trans     &trans
+            &kp N1      &kp N2     &kp N3     &kp N4     &kp ESC        &trans     &trans      &trans    &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │  TAB     │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &kp TAB         &trans     &trans     &trans     &trans     &trans
