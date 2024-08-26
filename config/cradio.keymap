@@ -106,14 +106,14 @@
         game_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q	     │  W       │  F       │  P       │  B       │   │   base   │          │          │          │          │
-           &kp Q      &kp W       &kp F       &kp P     &kp B          &to 0      &trans      &trans      &trans    &trans 
+        //│  Q	     │  W       │  E       │  R       │  T       │   │   base   │          │          │          │          │
+           &kp Q      &kp W       &kp E      &kp R     &kp T          &to 0      &trans      &trans      &trans    &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  R       │  S       │  T       │  G       │   │          │          │          │          │          |
-            &kp A      &kp R      &kp S      &kp T      &kp G          &trans    &trans     &kp UARW     &trans    &trans
+        //│  A       │  S       │  D       │  F       │  G       │   │          │          │          │          │          |
+            &kp A      &kp S      &kp D      &kp F      &kp G          &trans    &trans     &kp UARW     &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  SHIFT   │   │          │          │          │          │          │
-            &kp Z     &kp X      &kp C      &kp D      &kp V          &trans     &kp LARW  &kp DARW    &kp RARW   &trans
+        //│  Z       │  X       │  C       │  V       │  SHIFT   │   │          │          │          │          │          │
+            &kp Z     &kp X      &kp C      &kp V      &kp V          &trans     &kp LARW  &kp DARW    &kp RARW   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp LCTRL &lt 5 SPACE     &trans     &trans
         //                                ╰──────────┴──────────╯    ╰──────────┴──────────╯
