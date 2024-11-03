@@ -41,11 +41,11 @@
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  :       │
             &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  O       │
-          &ht LCTRL A  &ht LALT R  &ht LGUI S &ht LSHFT T &ht TAB G   &ht TAB M    &ht RSHFT N &ht RGUI E &ht RALT I &ht RCTRL O
+        //│  A       │  R       │  S       │  T       │  G       │   │  K       │  N       │  E       │  I       │  O       │
+          &ht LCTRL A  &ht LALT R  &ht LGUI S &ht LSHFT T &ht TAB G   &ht TAB K    &ht RSHFT N &ht RGUI E &ht RALT I &ht RCTRL O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
+        //│  Z       │  X       │  C       │  D       │  V       │   │  M       │  H       │ , <      │ . >      │ / ?      │
+            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp M      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp LSHFT   &kp SPACE      &lt 2 ENTER &lt 1 BSPC 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -106,30 +106,30 @@
         game_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q	     │  W       │  E       │  R       │  T       │   │   base   │          │          │          │          │
-           &kp Q      &kp W       &kp E      &kp R     &kp T          &to 0      &trans      &trans      &trans    &trans 
+        //│  B	     │  Q       │  W       │  E       │  R       │   │   base   │          │          │          │          │
+           &kp B      &kp Q       &kp W       &kp E     &kp R          &to 0      &kp U     &kp UARW      &kp O     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │          │          │          │          │          |
-            &kp A      &kp S      &kp D      &kp F      &kp G          &trans    &trans     &kp UARW     &trans    &trans
+        //│  T       │  A       │  S       │  D       │  G       │   │          │          │          │          │          |
+            &kp T      &kp A      &kp S      &kp D      &kp G          &trans    &kp LARW    &kp DARW    &kp RARW    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  SHIFT   │   │          │          │          │          │          │
-            &kp Z     &kp X      &kp C      &kp V      &kp LSHFT          &trans     &kp LARW  &kp DARW    &kp RARW   &trans
+        //│  Z       │  X       │  C       │  V       │          │   │          │          │          │          │          │
+            &kp Z     &kp X      &kp C      &kp V      &kp LCTRL          &trans     &trans    &kp DARW     &trans   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp LCTRL &lt 5 SPACE     &trans     &trans
+                                            &kp LSHFT &lt 5 SPACE     &trans     &trans
         //                                ╰──────────┴──────────╯    ╰──────────┴──────────╯
             >;
 		};	
         gametwo_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ 1        │  2       │  3       │  4       │  ESC     │   │          │          │          │          │          │
-            &kp N1      &kp N2     &kp N3     &kp N4     &kp ESC        &trans     &trans      &trans    &trans     &trans
+        //│          │          │          │          │  ESC     │   │          │          │          │          │          │
+            &kp N7     &kp N8     &trans     &kp N9     &kp ESC        &trans     &trans      &trans    &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │  TAB     │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &kp TAB         &trans     &trans     &trans     &trans     &trans
+            &kp N5     &trans     &trans     &trans     &kp TAB         &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans      &trans     &trans         &trans     &trans     &trans     &trans     &trans
+            &kp N1      &kp N2     &kp N3     &kp N4     &kp N6         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
