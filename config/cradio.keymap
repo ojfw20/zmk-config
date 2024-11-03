@@ -107,10 +107,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  B	     │  Q       │  W       │  E       │  R       │   │   base   │          │          │          │          │
-           &kp B      &kp W       &kp F       &kp P     &kp B          &to 0      &kp U     &kp UARW      &kp O     &trans
+           &kp B      &kp Q       &kp W       &kp E     &kp R          &to 0      &kp U     &kp UARW      &kp O     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  A       │  S       │  D       │  G       │   │          │          │          │          │          |
-            &kp A      &kp R      &kp S      &kp T      &kp G          &trans    &kp LARW    &kp DARW    &kp RARW    &trans
+        //│  T       │  A       │  S       │  D       │  G       │   │          │          │          │          │          |
+            &kp T      &kp A      &kp S      &kp D      &kp G          &trans    &kp LARW    &kp DARW    &kp RARW    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │          │   │          │          │          │          │          │
             &kp Z     &kp X      &kp C      &kp V      &kp LCTRL          &trans     &trans    &kp DARW     &trans   &trans
