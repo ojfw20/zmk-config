@@ -115,7 +115,7 @@
         //│  Z       │  X       │  C       │  V       │          │   │          │          │          │          │          │
             &kp Z     &kp X      &kp C      &kp V      &kp LCTRL          &trans     &trans    &kp DARW     &trans   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp SHFT &lt 5 SPACE     &trans     &trans
+                                            &kp LSHFT &lt 5 SPACE     &trans     &trans
         //                                ╰──────────┴──────────╯    ╰──────────┴──────────╯
             >;
 		};	
