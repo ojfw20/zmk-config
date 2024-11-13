@@ -13,6 +13,22 @@
 #define CONFIG_WIRELESS 1
 
 / {
+    macros {
+        meh: meh{
+            compatible = "zmk,behaviour-macro";
+            #binding-cells = <0>;
+            bindings
+              = <&macro_press &kp LCTRL>
+              , <&macro_press &kp LALT>
+              , <&macro_press &kp LGUI>
+              , <&macro_pause_for_release>
+              , <&macro_release &kp LCTRL>
+              , <&macro_release &kp LALT>
+              , <&macro_release &kp LGUI>
+              ;
+        };
+    };
+
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -36,24 +52,26 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <
+            bindings = <&meh> ,
+            <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  :       │
             &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  O       │
-          &ht LCTRL A  &ht LALT R  &ht LGUI S &ht LSHFT T &ht TAB G   &kp M       &kp N      &kp E      &kp I      &kp O
+          &ht LCTRL A  &ht LALT R  &ht LGUI S &ht LSHFT T &ht TAB G   &ht TAB M  &ht LSHFT N &ht LGUI E  &ht LALT I &ht LCTRL O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp LSHFT   &kp SPACE      &lt 2 ENTER &lt 1 BSPC 
+                                            &kp LSHFT   &ht &meh SPACE   &lt 2 ENTER &lt 1 BSPC 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
         right_layer {
-            bindings = <
+            bindings = <&meh> ,
+            <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │  0       │
             &kp N1      &kp N2     &kp N3     &kp N4     &kp N5        &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
@@ -70,7 +88,8 @@
         };
 
         left_layer {
-            bindings = <
+            bindings = <&meh> ,
+            <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  ESC     │          │          │          │          │   │   F1     │    F2    │   F3     │   F4     │   DEL   │
              &kp ESC    &trans     &trans     &trans   &trans         &kp F1    &kp F2      &kp F3     &kp F4     &kp DEL
@@ -104,7 +123,8 @@
         };
 		
         game_layer {
-            bindings = <
+            bindings = <&meh> ,
+            <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  B	     │  Q       │  W       │  E       │  R       │   │   base   │          │          │          │          │
            &kp B      &kp Q       &kp W       &kp E     &kp R          &to 0      &kp U     &kp UARW      &kp O     &trans
@@ -120,7 +140,8 @@
             >;
 		};	
         gametwo_layer {
-            bindings = <
+            bindings = <&meh> ,
+            <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │  ESC     │   │          │          │          │          │          │
             &kp N7     &kp N8     &trans     &kp N9     &kp ESC        &trans     &trans      &trans    &trans     &trans
@@ -131,7 +152,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp N1      &kp N2     &kp N3     &kp N4     &kp N6         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans      &trans         &trans     &trans
+                                             &trans      &kp SPACE         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
